@@ -17,8 +17,3 @@ DROP TABLE job;
 --INNER JOIN job_skills ON (skill.id = job_skills.skills_id)
 --WHERE job_skills.job_id IS NOT NULL
 --ORDER BY name ASC;
-
-SELECT * FROM skill
-INNER JOIN job On skill.id = job_skills.skill.id
-Where job_skills.job_id IS NOT NULL
-ORDER BY name ASC;

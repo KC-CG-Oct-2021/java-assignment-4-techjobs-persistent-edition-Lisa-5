@@ -59,9 +59,6 @@ public class ListController {
             jobs = JobData.findByColumnAndValue(column, value, jobRepository.findAll());
             model.addAttribute("title", "Jobs with " + columnChoices.get(column) + ": " + value);
         }
-        model.addAttribute("jobs", jobs);
-        model.addAttribute("employers", employerRepository.findAll());
-        model.addAttribute("skills", skillRepository.findAll());
 
         return "list-jobs";
     }
